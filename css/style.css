@@ -269,3 +269,94 @@ body {
   width: 1280px;
   margin: auto;
 }
+
+.info_section {
+  width: 100%;
+  background-color: rgb(248, 249, 251);
+}
+.info_section .info_section_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 107px;
+  padding-bottom: 119px;
+}
+.info_section .info_section_container p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: rgb(67, 126, 247);
+  margin-bottom: 16px;
+}
+.info_section .info_section_container h1 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: rgb(39, 45, 55);
+}
+.info_section .info_section_container .demonstrate_second,
+.info_section .info_section_container .demonstrate_third {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .info_section .container {
+    width: 768px;
+  }
+  .info_section .info_section_container {
+    padding-top: 48px;
+    padding-bottom: 88px;
+  }
+  .info_section .info_section_container p {
+    margin-bottom: 0;
+  }
+  .info_section .info_section_container .demonstrate_first,
+  .info_section .info_section_container .demonstrate_third {
+    display: none;
+  }
+  .info_section .info_section_container .demonstrate_second {
+    display: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info_section .container {
+    width: 375px;
+  }
+  .info_section .info_section_container {
+    padding: 32px 16px 40px 16px;
+  }
+  .info_section .info_section_container p {
+    margin-bottom: 32px;
+  }
+  .info_section .info_section_container .demonstrate_second {
+    display: none;
+  }
+  .info_section .info_section_container .demonstrate_third {
+    display: inherit;
+  }
+  .info_section .info_section_container .demonstrate_third h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+}
