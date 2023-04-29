@@ -158,11 +158,20 @@ footer {
             width: 100%;
             display: flex;
             justify-content: center;
+            margin-bottom: 16px;
           }
           .mix {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+              text-align: center;
+              letter-spacing: -0.1px;
+              color: $gray-50;
+            }
           }
         }
       }
