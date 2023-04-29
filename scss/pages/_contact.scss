@@ -110,7 +110,8 @@
         color: $gray-700;
       }
       input,
-      select {
+      select,
+      textarea {
         font-weight: 400;
         font-size: 15px;
         padding: 12px 16px;
@@ -124,8 +125,58 @@
       select {
         color: $gray-700;
       }
+    }
+    .big_text {
+      display: flex;
+      flex-direction: column;
+      width: 1152px;
+      height: 147px;
+      label {
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.1px;
+        color: $gray-700;
+      }
       textarea {
-        width: 1141px;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 12px 16px;
+        line-height: 22px;
+        letter-spacing: -0.1px;
+        color: $gray-25;
+        border: 1px solid $neutral-700;
+        box-shadow: 0px 1px 2px $button_border;
+        border-radius: 6px;
+      }
+    }
+    .checkbox {
+      display: flex;
+      align-items: center;
+      label {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+        color: $gray-700;
+        margin-left: 12px;
+      }
+      input {
+        width: 20px;
+        height: 24px;
+      }
+    }
+    .button {
+      width: 100%;
+      button {
+        @include buttons;
+        width: 88px;
+        background: $primary-600;
+        box-shadow: 0px 1px 2px $button_border;
+        border-radius: 6px;
+        color: $white;
+        border: 1px solid transparent;
       }
     }
   }
