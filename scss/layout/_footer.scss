@@ -31,11 +31,7 @@ footer {
             height: 40px;
           }
           p {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: -0.1px;
-            color: $gray-50;
+            @include fadedText;
           }
         }
         .links {
@@ -43,19 +39,14 @@ footer {
           flex-direction: column;
           height: 216px;
           p {
+            @include fadedText;
             font-weight: 600;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: -0.1px;
             color: $gray-700;
             margin-bottom: 24px;
           }
           a {
+            @include fadedText;
             font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: -0.1px;
-            color: $gray-50;
             text-decoration: none;
             margin-bottom: 12px;
             &:hover {
@@ -77,12 +68,8 @@ footer {
           margin-bottom: 16px;
         }
         p {
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
+          @include fadedText;
           text-align: center;
-          letter-spacing: -0.1px;
-          color: $gray-50;
         }
       }
     }
@@ -114,11 +101,7 @@ footer {
             }
             p {
               width: 247px;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 24px;
-              letter-spacing: -0.1px;
-              color: $gray-50;
+              @include fadedText;
             }
           }
           .links {
@@ -128,18 +111,13 @@ footer {
             height: 180px;
             p {
               font-weight: 600;
-              font-size: 16px;
-              line-height: 24px;
-              letter-spacing: -0.1px;
+              @include fadedText;
               color: $gray-700;
               margin-bottom: 24px;
             }
             a {
               font-weight: 500;
-              font-size: 16px;
-              line-height: 24px;
-              letter-spacing: -0.1px;
-              color: $gray-50;
+              @include fadedText;
               text-decoration: none;
               margin-bottom: 12px;
               &:hover {

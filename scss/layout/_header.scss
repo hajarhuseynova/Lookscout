@@ -3,7 +3,7 @@
   height: 86px;
   padding: 20px 0;
   background-color: $neutral-100;
-  border-bottom: 1px solid $navbar_border_bottom;
+  border-bottom: 1px solid $neutral-600;
   .navbar_container {
     display: flex;
     justify-content: space-between;
@@ -32,20 +32,14 @@
     .navbar_right {
       display: flex;
       align-items: center;
-
       .bg_primary {
-        @include buttons;
         background: $primary-600;
-        border: 1px solid transparent;
         box-shadow: 0px 1px 2px $button_border;
-        border-radius: 6px;
         color: $white;
       }
       .bg_white {
-        @include buttons;
         color: $primary-600;
         background-color: transparent;
-        border: 1px solid transparent;
         padding-left: 0;
         padding-right: 24px;
       }

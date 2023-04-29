@@ -1,12 +1,14 @@
-@mixin buttons {
+@mixin fadedText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  color: $gray-50;
+}
+@mixin blueText {
   font-weight: 600;
-  font-size: 15px;
-  line-height: 22px;
-  font-family: "Inter", sans-serif;
-  cursor: pointer;
-  transition: 0.5s;
-  padding: 12px 18px;
-  &:hover {
-    transform: scale(1.05);
-  }
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  color: $primary-600;
 }
