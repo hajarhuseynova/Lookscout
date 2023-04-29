@@ -389,6 +389,7 @@ body {
 
 .input_section {
   width: 100%;
+  padding: 64px 0;
 }
 .input_section .input_section_container {
   display: -webkit-box;
@@ -398,9 +399,8 @@ body {
       flex-wrap: wrap;
   width: 1216px;
   background-color: rgb(248, 249, 251);
-  padding: 64px 0;
-  gap: 24px;
   padding: 32px;
+  gap: 24px;
 }
 .input_section .input_section_container .general {
   display: -webkit-box;
@@ -514,6 +514,88 @@ body {
           transform: scale(1.05);
 }
 
+.dark_section {
+  background-color: rgb(21, 27, 40);
+}
+.dark_section .dark_section_container {
+  padding: 64px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.dark_section .dark_section_container .left_dark {
+  width: 516px;
+  height: 328px;
+  margin: 116px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.dark_section .dark_section_container .left_dark p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  color: rgb(67, 126, 247);
+  margin-bottom: 8px;
+}
+.dark_section .dark_section_container .left_dark h5 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.01em;
+  color: rgb(249, 249, 249);
+}
+.dark_section .dark_section_container .left_dark small {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  color: rgb(165, 172, 186);
+  margin-top: 16px;
+}
+.dark_section .dark_section_container .left_dark button {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 12px 18px;
+  width: 133px;
+  height: 46px;
+  background: rgb(67, 126, 247);
+  -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+  border-radius: 6px;
+  border: 1px solid transparent;
+  margin-top: 38px;
+}
+.dark_section .dark_section_container .left_dark button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.dark_section .dark_section_container .right_dark {
+  width: 560px;
+  height: 560px;
+  margin-right: 32px;
+}
+.dark_section .dark_section_container .right_dark .first_desc {
+  width: 560px;
+  height: 560px;
+}
+.dark_section .dark_section_container .right_dark .second_desc {
+  display: none;
+}
+
 @media screen and (max-width: 1280px) {
   .info_section .container {
     width: 768px;
@@ -557,6 +639,49 @@ body {
   .card_section .card_section_container .cards .card {
     width: 340px;
   }
+  .input_section {
+    padding: 48px 0;
+  }
+  .input_section .container {
+    width: 768px;
+  }
+  .input_section .input_section_container {
+    width: 704px;
+  }
+  .input_section .input_section_container .general {
+    width: 308px;
+  }
+  .input_section .input_section_container .big_text {
+    width: 640px;
+  }
+  .dark_section .container {
+    width: 768px;
+  }
+  .dark_section .dark_section_container {
+    padding: 40px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dark_section .dark_section_container .left_dark {
+    width: 704px;
+    height: 262px;
+    margin: 0 32px;
+  }
+  .dark_section .dark_section_container .right_dark {
+    width: 704px;
+    height: 460px;
+    margin: 48px 32px 0 32px;
+  }
+  .dark_section .dark_section_container .right_dark .first_desc {
+    display: none;
+  }
+  .dark_section .dark_section_container .right_dark .second_desc {
+    display: inherit;
+    width: 704px;
+    height: 460px;
+  }
 }
 @media screen and (max-width: 768px) {
   .info_section .container {
@@ -598,5 +723,58 @@ body {
   }
   .card_section .card_section_container .cards .card {
     width: 343px;
+  }
+  .input_section {
+    padding: 40px 0;
+  }
+  .input_section .container {
+    width: 375px;
+  }
+  .input_section .input_section_container {
+    width: 375px;
+    padding: 0 16px;
+    background-color: #fff;
+  }
+  .input_section .input_section_container .general {
+    width: 343px;
+  }
+  .input_section .input_section_container .big_text {
+    width: 343px;
+  }
+  .input_section .input_section_container .button button {
+    width: 343px;
+  }
+  .dark_section .container {
+    width: 375px;
+  }
+  .dark_section .dark_section_container {
+    padding: 32px 0;
+  }
+  .dark_section .dark_section_container .left_dark {
+    width: 343px;
+    height: 386px;
+    margin: 0 16px;
+  }
+  .dark_section .dark_section_container .left_dark h5 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+  }
+  .dark_section .dark_section_container .left_dark button {
+    margin-top: 30px;
+  }
+  .dark_section .dark_section_container .right_dark {
+    width: 343px;
+    height: 343px;
+    margin: 32px 16px 0 16px;
+  }
+  .dark_section .dark_section_container .right_dark .first_desc {
+    display: inherit;
+    width: 343px;
+    height: 343px;
+  }
+  .dark_section .dark_section_container .right_dark .second_desc {
+    display: none;
   }
 }

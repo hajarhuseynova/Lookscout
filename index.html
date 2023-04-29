@@ -118,19 +118,24 @@
       <div class="container input_section_container">
         <div class="general">
           <label for="firstname">First Name</label>
-          <input type="text" placeholder="Input" id="firstname" />
+          <input type="text" placeholder="Input" id="firstname" class="forms" />
         </div>
         <div class="general">
           <label for="email">Email Address</label>
-          <input type="email" placeholder="Input" id="email" />
+          <input type="email" class="forms" placeholder="Input" id="email" />
         </div>
         <div class="general">
           <label for="phonenumber">Phone Number</label>
-          <input type="text" id="phonenumber" placeholder="+000" />
+          <input
+            type="text"
+            class="forms"
+            id="phonenumber"
+            placeholder="+000"
+          />
         </div>
         <div class="general">
           <label for="dropdown">Get In Touch With Us</label>
-          <select id="dropdown" name="dropdown">
+          <select id="dropdown" class="forms" name="dropdown">
             <option value="volvo">Dropdown</option>
             <option value="saab">Saab</option>
             <option value="fiat">Fiat</option>
@@ -140,6 +145,7 @@
         <div class="big_text">
           <label for="msg">Messages</label>
           <textarea
+            class="forms"
             name=""
             id="msg"
             cols="30"
@@ -148,7 +154,7 @@
           ></textarea>
         </div>
         <div class="checkbox">
-          <input type="checkbox" id="checkbox" />
+          <input type="checkbox" class="forms" id="checkbox" />
           <label for="checkbox">I agree with Lookscout Privacy Policy</label>
         </div>
         <div class="button">
@@ -156,5 +162,34 @@
         </div>
       </div>
     </div>
+    <div class="dark_section">
+      <div class="container dark_section_container">
+        <div class="left_dark">
+          <p>1% OF THE INDUSTRY</p>
+          <h5>
+            Demonstrate branding consequently think outside the box and beyond.
+          </h5>
+          <small
+            >Velit purus egestas tellus phasellus. Mattis eget sed faucibus
+            magna vulputate pellentesque a diam tincidunt. Aenean malesuada
+            tellus tellus faucibus mauris quisque mauris in.</small
+          >
+          <button>Start now -></button>
+        </div>
+        <div class="right_dark">
+          <img
+            src="./asserts/images/main_photo.png"
+            class="first_desc"
+            alt="Photo"
+          />
+          <img
+            src="./asserts/images/Right.png"
+            class="second_desc"
+            alt="Photo"
+          />
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
   </body>
 </html>
